@@ -1,0 +1,62 @@
+body {
+	margin: 0px; /* Takes the space away on the left border*/
+}
+
+.crazy {
+	color: red;
+}
+
+
+.container {    /* Use CSS tricks/flexbox*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+p {
+  line-height: 1.5;
+  font-family: 'Crimson Text', serif;
+}
+  
+h1 { 
+	font-family: fantasy;
+	font-size:3em;
+	border-bottom: 2px solid pink; /* The line under the title*/ 
+	border-right: 2px solid pink;  /* The line to the right of title*/
+	width: 400px; /* The width of the line*/
+	text-align: center;     /* Aligned to the width of the line, not the pictures*/
+	-moz-box-shadow:4px 4px 5px #888888; /* This is used when a property may not work on all web browsers*/
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px; /* The spacing between the title and pictures*/
+}
+
+div {
+	font-size: large;
+}
+
+.sidebar {
+  width: 30%;
+  float: right;
+  border: 2px solid red;
+  margin: 12px;
+  background-color: yellow;
+  text-align: center;
+}
+
+li {
+   list-style-type:none;
+ }
+
+img {
+	width: 450px;
+	height: 300px;
+	margin: 10px; /*this is the space between the pictures */
+	transition: all 1s; /*this is a new CSS3 feature. It says I 
+	want the image to transition when an action is taken upon. And I 
+	want all the properties to transition over 1 sec. */
+}
+img:hover {
+	transform: scale(1.1); /*When I hover, i want it to transform
+	by a scale of 1.1, in other words how much the picture
+
